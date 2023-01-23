@@ -1,0 +1,18 @@
+char** creation_grille(int taille);
+void affiche_grille( int taille, char **grille);
+char* selection_mot_crea(int taille, char *mot);
+char* remplit_grille(char **grille, int taille, char *alphabet);
+int choix_position_x(int taille);
+int choix_position_y(int taille);
+int choix_direction();
+char* place_mot_NO(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_N(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_NE(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_O(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_E(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_SO(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_S(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+char* place_mot_SE(int taille, char **grille, int position_x, int position_y, char *mot, int **verification);
+int place_mot(int taille ,char **grille, int position_x, int position_y, int direction, char *mot, int *verification);
+void copie_grille(char **grille, char **tab_mot, int taille);
+int sauvegarde_fichier(FILE* fichier, char **dico, char **grille, int compteur_mot, int taille);

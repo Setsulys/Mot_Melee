@@ -1,0 +1,15 @@
+char* recup_nom_fichier(int taille);
+char** creation_grille(int taille);
+char** creation_dico(int taille);
+void affiche_grille( int taille, char **grille);
+void avance_mot(FILE* fichier);
+void avance_grille(FILE* fichier);
+void avance_cpt_mot(FILE* fichier);
+void remplit_grille(char **grille, int taille, FILE* fichier);
+int selection_nb_mot(FILE* fichier);
+char* selection_mot(int taille, FILE* fichier);
+void remplit_dico(char **dico_mot, int taille, FILE* fichier);
+char *mot_repere(int taille);
+int coord_mot_repere_debut();
+int coord_mot_repere_fin();
+int cherche_dico(char **dico_mot, char *mot, int taille);
